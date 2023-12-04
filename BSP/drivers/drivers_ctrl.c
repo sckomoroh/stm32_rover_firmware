@@ -1,8 +1,6 @@
 /*
- * bsp_drivers.c
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
  */
 
 #include "drivers_ctrl.h"
@@ -83,7 +81,6 @@ void bsp_drivers_process_encoders_cmd()
 void bsp_drivers_process_speeds_cmd(void* data)
 {
     bsp_oled_set_string(1, "Set speeds");
-//    _bsp_uart_print("[BSP DRIVERS] Set speeds");
 
     char buffer[24] = {0};
 

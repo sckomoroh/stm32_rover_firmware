@@ -1,10 +1,3 @@
-/*
- * bsp_io_i2c.c
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #include "bsp_io_i2c.h"
 
 static void Delay_For_Pin(uint8_t nCount) {

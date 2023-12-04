@@ -1,3 +1,8 @@
+/*
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
+ */
+
 #include "uart_ctrl.h"
 
 #include <stdlib.h>
@@ -52,9 +57,9 @@ void* bsp_uart_get_data() { return _uart_data.buffer; }
 
 void _bsp_uart_print(char* text)
 {
-	_bsp_uart_send_array_u8((uint8_t*)text, strlen(text));
-	_bsp_uart_send_u8(10);
-	_bsp_uart_send_u8(13);
+    _bsp_uart_send_array_u8((uint8_t*)text, strlen(text));
+    _bsp_uart_send_u8(10);
+    _bsp_uart_send_u8(13);
 }
 
 void bsp_uart_send_data(void* data, uint16_t data_size)
@@ -94,13 +99,6 @@ static void _process_received_data()
         buffer = malloc(_uart_data.payload_size);
         memcpy(buffer, _uart_data.buffer, _uart_data.payload_size);
 
-        // for (size_t i = 0; i < size / 2; ++i)
-        // {
-        //     uint8_t temp = bytes[i];
-        //     bytes[i] = bytes[size - 1 - i];
-        //     bytes[size - 1 - i] = temp;
-        // }
-
         _uart_data.state = URS_WAIT_PROCESS;
     }
 }
@@ -113,7 +111,7 @@ static void _bsp_uart_send_array_u8(uint8_t* buffer, uint16_t size)
     HAL_UART_Transmit_DMA(&huart1, buffer, size);
 #else
     while (size--) {
-    	_bsp_uart_send_u8(*buffer);
+        _bsp_uart_send_u8(*buffer);
         buffer++;
     }
 #endif  //  ENABLE_UART_DMA

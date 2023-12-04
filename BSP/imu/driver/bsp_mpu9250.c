@@ -1,10 +1,3 @@
-/*
- * bsp_mpu9250.c
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #include "bsp_mpu9250.h"
 #include "main.h"
 #include "bsp_mpuiic.h"

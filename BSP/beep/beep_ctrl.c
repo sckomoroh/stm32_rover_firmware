@@ -1,3 +1,8 @@
+/*
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
+ */
+
 #include "beep_ctrl.h"
 
 #include "main.h"

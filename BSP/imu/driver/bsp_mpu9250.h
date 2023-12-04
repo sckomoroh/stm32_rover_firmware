@@ -1,10 +1,3 @@
-/*
- * bsp_mpu9250.h
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #ifndef IMU_BSP_MPU9250_H_
 #define IMU_BSP_MPU9250_H_
 

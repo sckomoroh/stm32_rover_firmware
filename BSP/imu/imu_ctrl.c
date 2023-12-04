@@ -1,3 +1,8 @@
+/*
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
+ */
+
 #include "imu_ctrl.h"
 
 #include <math.h>
@@ -28,20 +33,12 @@ static void _process_accel_data();
 
 void bsp_imu_init() { mpu9250_init(); }
 
-void bsp_imu_process_cmd() {
-	_process_gyro_data();
-	_process_accel_data();
-
-	bsp_uart_send_data(&_imu_full_data, sizeof(_imu_full_data)); }
-
-void bsp_imu_raw_process_cmd()
+void bsp_imu_process_cmd()
 {
-    mpu_get_gyro(&_imu_raw_data.gyro[IMU_X], &_imu_raw_data.gyro[IMU_Y],
-                 &_imu_raw_data.gyro[IMU_Z]);
-    mpu_get_accel(&_imu_raw_data.accel[IMU_X], &_imu_raw_data.accel[IMU_Y],
-                  &_imu_raw_data.accel[IMU_Z]);
+    _process_gyro_data();
+    _process_accel_data();
 
-    bsp_uart_send_data(&_imu_raw_data, sizeof(_imu_raw_data));
+    bsp_uart_send_data(&_imu_full_data, sizeof(_imu_full_data));
 }
 
 /*

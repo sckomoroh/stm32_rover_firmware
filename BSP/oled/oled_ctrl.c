@@ -1,3 +1,8 @@
+/*
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
+ */
+
 #include "oled_ctrl.h"
 
 #include <stdint.h>

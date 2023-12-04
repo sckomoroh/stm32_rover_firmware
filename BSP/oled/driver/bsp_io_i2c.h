@@ -1,10 +1,3 @@
-/*
- * bsp_io_i2c.h
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #ifndef OLED_BSP_IO_I2C_H_
 #define OLED_BSP_IO_I2C_H_
 

@@ -1,10 +1,3 @@
-/*
- * bsp_oled_fonts.h
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #ifndef OLED_BSP_OLED_FONTS_H_
 #define OLED_BSP_OLED_FONTS_H_
 

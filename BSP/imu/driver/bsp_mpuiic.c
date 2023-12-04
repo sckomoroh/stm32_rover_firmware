@@ -1,10 +1,3 @@
-/*
- * bsp_mpuiic.c
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #include "bsp_mpuiic.h"
 
 // Microsecond delay

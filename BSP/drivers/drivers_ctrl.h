@@ -1,8 +1,6 @@
 /*
- * bsp_drivers.h
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
  */
 
 #ifndef DRIVERS_BSP_DRIVERS_H_

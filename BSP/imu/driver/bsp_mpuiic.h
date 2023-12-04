@@ -1,10 +1,3 @@
-/*
- * bsp_mpuiic.h
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #ifndef IMU_BSP_MPUIIC_H_
 #define IMU_BSP_MPUIIC_H_
 

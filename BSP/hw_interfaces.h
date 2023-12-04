@@ -1,3 +1,8 @@
+/*
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
+ */
+
 #include "stm32f1xx_hal.h"
 
 extern TIM_HandleTypeDef htim1;

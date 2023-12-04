@@ -1,10 +1,3 @@
-/*
- * bsp_oled_fonts.c
- *
- *  Created on: Dec 1, 2023
- *      Author: yzvihunov
- */
-
 #include "bsp_oled_fonts.h"
 
 const uint16_t font_7x10_data[] = { 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,

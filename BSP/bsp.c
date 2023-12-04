@@ -1,3 +1,8 @@
+/*
+ *  Created on: Dec 4, 2023
+ *      Author: Yehor Zvihunov
+ */
+
 #include "bsp.h"
 
 #include <stdio.h>
@@ -63,9 +68,6 @@ void bsp_process()
         break;
     case GET_IMU_CMD:
         bsp_imu_process_cmd();
-        break;
-    case GET_IMU_RAW_CMD:
-        bsp_imu_raw_process_cmd();
         break;
     }
 
